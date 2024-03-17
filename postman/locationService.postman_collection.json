@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "1764d502-ca24-4407-a20b-171f56ab079c",
+		"name": "locationService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6460740"
+	},
+	"item": [
+		{
+			"name": "/location/driver/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"longitude\": -69.883565,\n    \"lattitude\": 18.5261268\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{locationServiceBaseUrl}}/location/driver/335",
+					"host": [
+						"{{locationServiceBaseUrl}}"
+					],
+					"path": [
+						"location",
+						"driver",
+						"335"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/location/passenger/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"longitude\": -69.883565,\n    \"lattitude\": 18.5261268\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{locationServiceBaseUrl}}/location/passenger/:id",
+					"host": [
+						"{{locationServiceBaseUrl}}"
+					],
+					"path": [
+						"location",
+						"passenger",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

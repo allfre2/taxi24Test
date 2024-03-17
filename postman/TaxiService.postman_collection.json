@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "592d8cc9-cce1-4770-a8d4-ee1e81025612",
+		"name": "TaxiService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6460740"
+	},
+	"item": [
+		{
+			"name": "/drivers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/drivers",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"drivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/drivers/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/drivers/335",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"drivers",
+						"335"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/drivers/longitude/lattitude",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/drivers/-69.883565/18.5261268",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"drivers",
+						"-69.883565",
+						"18.5261268"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/passengers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/passengers",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/passengers/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/passengers/445",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"passengers",
+						"445"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/trips/active",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/trips/active",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"trips",
+						"active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/trips/complete/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/trips/complete/505",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"trips",
+						"complete",
+						"505"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/trips",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"driverId\": 335,\n  \"passengerId\": 445,\n  \"pickupLongitude\": -69.929611,\n  \"pickupLattitude\": 18.483402,\n  \"destinationLongitude\": -66.855118,\n  \"destinationLattitude\": 10.489442\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{taxiServiceBaseUrl}}/trips",
+					"host": [
+						"{{taxiServiceBaseUrl}}"
+					],
+					"path": [
+						"trips"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
