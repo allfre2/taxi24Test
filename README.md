@@ -10,11 +10,27 @@
 ### taxiService
 
 `cd taxiService`
+
 `npm run start:dev`
 
 ### locationService
 
 `cd locationService`
+
 `npm run start:dev`
+
+### sketch
+
+![diagram](/resources/hypotheticalArch.png)
+
+### postman
+
+![one](/resources/1.png)
+![two](/resources/2.png)
+![three](/resources/3.png)
+![four](/resources/4.png)
+![five](/resources/5.png)
+![six](/resources/6.png)
+![seven](/resources/7.png)
 
 Thanks.
